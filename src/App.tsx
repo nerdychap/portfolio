@@ -1,19 +1,19 @@
-import React from "react";
 import {
+  Briefcase,
+  ChevronRight,
+  Code,
+  ExternalLink,
   Github,
+  Globe,
+  GraduationCap,
   Linkedin,
   Mail,
-  ExternalLink,
-  Briefcase,
-  GraduationCap,
-  Code,
-  UserCircle2,
-  Sparkles,
-  ChevronRight,
-  Globe,
-  Smartphone,
   Palette,
+  Smartphone,
+  Sparkles,
+  UserCircle2,
 } from "lucide-react";
+import seatswayImage from "./assets/images/seatsway.jpeg";
 
 const workExperience = [
   {
@@ -62,6 +62,13 @@ const technicalSkills = [
 ];
 const projects = [
   {
+    title: "Seatsway - Ticket Booking App",
+    tech: ["Nextjs", "Typescript", "Tailwind CSS", "Supabase"],
+    image: seatswayImage,
+    link: "https://seatsway.netlify.app/",
+    description: "A modern ticket booking platform for events.",
+  },
+  {
     title: "Ecommerce Web App",
     tech: ["React", "Redux Saga", "Tailwind CSS"],
     description:
@@ -69,33 +76,8 @@ const projects = [
     image: "https://images.unsplash.com/photo-1557821552-17105176677c",
     link: "https://market-square-web.netlify.app/",
   },
-  {
-    title: "Covid-19 Data Tracker",
-    tech: ["React", "Material UI", "Redux", "D3.js"],
-    description:
-      "Real-time COVID-19 statistics visualization with interactive charts and country-specific data analysis.",
-    image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144",
-    link: "https://github.com/nerdychap/covid-19-viz",
-  },
-  {
-    title: "Weather Dashboard",
-    tech: ["React", "TypeScript", "OpenWeather API"],
-    description:
-      "Modern weather application with location-based forecasts and interactive weather maps.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
-    link: "https://weather-ang.netlify.app/",
-  },
-  {
-    title: "Shopping Cart PWA",
-    tech: ["React", "PWA", "IndexedDB"],
-    description:
-      "Progressive Web App with offline support, push notifications, and seamless mobile experience.",
-    image: "https://images.unsplash.com/photo-1607082349566-187342175e2f",
-    link: "https://shopping-kart.netlify.app/",
-  },
 ];
 function App() {
-  // Social media links
   const SOCIAL_LINKS = {
     github: "https://github.com/nerdychap",
     linkedin: "https://www.linkedin.com/in/siyabonga-hlengwa-4552a087/",
@@ -104,7 +86,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
       <div className="relative h-[60vh] bg-gradient-to-r from-blue-600 to-blue-800 flex items-center">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black/40"></div>
@@ -142,7 +123,6 @@ function App() {
         </div>
       </div>
 
-      {/* Stats Section */}
       <div className="container mx-auto px-6 -mt-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
@@ -179,7 +159,6 @@ function App() {
       </div>
 
       <div className="container mx-auto px-6 py-24">
-        {/* About Section */}
         <section className="mb-24">
           <div className="flex items-center gap-2 text-blue-600 font-medium mb-2">
             <UserCircle2 size={20} />
@@ -229,7 +208,6 @@ function App() {
           </div>
         </section>
 
-        {/* Education Section */}
         <section className="mb-24">
           <div className="flex items-center gap-2 text-blue-600 font-medium mb-2">
             <GraduationCap size={20} />
@@ -268,7 +246,6 @@ function App() {
           </div>
         </section>
 
-        {/* Experience Section */}
         <section className="mb-24">
           <div className="flex items-center gap-2 text-blue-600 font-medium mb-2">
             <Briefcase size={20} />
@@ -312,7 +289,6 @@ function App() {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section className="mb-24">
           <div className="flex items-center gap-2 text-blue-600 font-medium mb-2">
             <Code size={20} />
@@ -343,7 +319,6 @@ function App() {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section className="mb-24">
           <div className="flex items-center gap-2 text-blue-600 font-medium mb-2">
             <Sparkles size={20} />
@@ -362,7 +337,7 @@ function App() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    className="w-full h-200 object-scale-down group-hover:scale-105 transition duration-500"
                   />
                 </div>
                 <div className="p-8">
@@ -398,7 +373,6 @@ function App() {
         </section>
       </div>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
