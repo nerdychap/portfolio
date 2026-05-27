@@ -305,10 +305,10 @@ function App() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-200 object-scale-down group-hover:scale-105 transition duration-500"
+                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
                   />
                 </div>
-                <div className="p-8">
+                <div className="p-4">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
                   {project.tech && (
