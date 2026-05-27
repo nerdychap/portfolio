@@ -92,7 +92,7 @@ function App() {
             </div>
             <h1 className="text-6xl font-bold mb-4 text-white">Siyabonga Emmanuel Hlengwa</h1>
             <p className="text-2xl text-blue-100 mb-8">
-              Crafting exceptional digital experiences with React & React Native
+              Developing user intuitive applications with React, Next.js & React Native
             </p>
             <div className="flex gap-4">
               <a
