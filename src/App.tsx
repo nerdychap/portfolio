@@ -13,7 +13,7 @@ import {
   Sparkles,
   UserCircle2,
 } from "lucide-react";
-import seatswayImage from "./assets/images/seatsway.jpeg";
+import combuiImage from "./assets/images/comb-ui.jpeg";
 
 const workExperience = [
   {
@@ -29,7 +29,7 @@ const workExperience = [
     company: "Noroff",
     period: "2022 Oct - 2023 Sep",
     description:
-      "Instructed students in HTML, CSS, JavaScript, and React, facilitating tutoring and video sessions. Contributed to grading and curriculum development.",
+      "I covered subjects such as HTML, CSS, JavaScript, and React through tutoring sessions and video lectures. Contributed to student assessment and curriculum development.",
     tech: ["React", "JavaScript", "HTML/CSS"],
   },
   {
@@ -44,8 +44,7 @@ const workExperience = [
     title: "Front-End Developer",
     company: "Mirum",
     period: "2019 Nov - 2020 Dec",
-    description:
-      "Developed responsive web applications using React and modern JavaScript.",
+    description: "Developed responsive web applications using React and modern JavaScript.",
     tech: ["React", "JavaScript", "HTML/CSS"],
   },
 ];
@@ -53,6 +52,7 @@ const workExperience = [
 const technicalSkills = [
   { name: "JavaScript [TypeScript]", level: "Expert" },
   { name: "React", level: "Expert" },
+  { name: "Next.js", level: "Expert" },
   { name: "React Native", level: "Advanced" },
   { name: "Redux", level: "Advanced" },
   { name: "Figma", level: "Advanced" },
@@ -62,19 +62,12 @@ const technicalSkills = [
 ];
 const projects = [
   {
-    title: "Seatsway - Ticket Booking App",
-    tech: ["Nextjs", "Typescript", "Tailwind CSS", "Supabase"],
-    image: seatswayImage,
-    link: "https://seatsway.netlify.app/",
-    description: "A modern ticket booking platform for events.",
-  },
-  {
-    title: "Ecommerce Web App",
-    tech: ["React", "Redux Saga", "Tailwind CSS"],
+    title: "CombUI - Generative React UI Builder (Web)",
+    tech: ["React (Nextjs)", "TypeScript", "Tailwind CSS", "OpenAI/Anthropic API"],
+    image: combuiImage,
+    link: "https://comb-ui.vercel.app/",
     description:
-      "A full-featured ecommerce platform with product filtering, cart management, and seamless checkout process.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c",
-    link: "https://market-square-web.netlify.app/",
+      "A web application that uses AI to generate React UI based on user input, leveraging OpenAI/Anthropic API for component generation.",
   },
 ];
 function App() {
@@ -97,9 +90,7 @@ function App() {
               <Globe size={16} />
               <span>Available for Remote Work</span>
             </div>
-            <h1 className="text-6xl font-bold mb-4 text-white">
-              Siyabonga Emmanuel Hlengwa
-            </h1>
+            <h1 className="text-6xl font-bold mb-4 text-white">Siyabonga Emmanuel Hlengwa</h1>
             <p className="text-2xl text-blue-100 mb-8">
               Crafting exceptional digital experiences with React & React Native
             </p>
@@ -170,19 +161,16 @@ function App() {
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="space-y-6">
               <p className="text-gray-600 leading-relaxed text-lg">
-                I am a Front-End Developer with expertise in JavaScript,
-                specializing in crafting dynamic web and mobile applications
-                using React and React Native. Holding a Bachelor of Science in
-                Mechatronics Engineering from the University of Cape Town, I
-                have honed my passion for coding since my first introduction to
-                programming during university.
+                I am a Frontend-Focused Full-Stack Developer who builds web and mobile, and AI
+                applications using React, React Native, and Next.js. I hold a Bachelor of Science in
+                Mechatronics Engineering from the University of Cape Town, where I first discovered
+                my love for coding.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Recently, I have expanded my skill set into UX/UI design,
-                mastering design tools like Figma for prototyping and
-                wireframing. This dual expertise allows me to create intuitive
-                and visually appealing experiences for users, blending technical
-                prowess with design sensibility.
+                Recently, I have expanded my skill set into UX/UI design, mastering design tools
+                like Figma for prototyping and wireframing. This dual expertise allows me to create
+                intuitive and visually appealing experiences for users, blending technical prowess
+                with design sensibility.
               </p>
               <div className="flex gap-4 pt-4">
                 <a
@@ -213,9 +201,7 @@ function App() {
             <GraduationCap size={20} />
             <span>EDUCATION</span>
           </div>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">
-            Academic Background
-          </h2>
+          <h2 className="text-4xl font-bold mb-8 text-gray-900">Academic Background</h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -223,9 +209,7 @@ function App() {
                   <h3 className="text-2xl font-semibold text-gray-900">
                     BSc(Eng) - Mechatronics Engineering
                   </h3>
-                  <div className="text-blue-600 font-medium mt-2">
-                    University of Cape Town
-                  </div>
+                  <div className="text-blue-600 font-medium mt-2">University of Cape Town</div>
                 </div>
                 <div className="text-gray-500 mt-2 md:mt-0">2014 - 2018</div>
               </div>
@@ -233,12 +217,8 @@ function App() {
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900">
-                    NSC - Grade 12
-                  </h3>
-                  <div className="text-blue-600 font-medium mt-2">
-                    Umkhumbi High School
-                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-900">NSC - Grade 12</h3>
+                  <div className="text-blue-600 font-medium mt-2">Umkhumbi High School</div>
                 </div>
                 <div className="text-gray-500 mt-2 md:mt-0">2009 - 2013</div>
               </div>
@@ -251,9 +231,7 @@ function App() {
             <Briefcase size={20} />
             <span>EXPERIENCE</span>
           </div>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">
-            Professional Journey
-          </h2>
+          <h2 className="text-4xl font-bold mb-8 text-gray-900">Professional Journey</h2>
           <div className="space-y-6">
             {workExperience.map((job, index) => (
               <div
@@ -262,12 +240,8 @@ function App() {
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-semibold text-gray-900">
-                      {job.title}
-                    </h3>
-                    <div className="text-blue-600 font-medium mt-1">
-                      {job.company}
-                    </div>
+                    <h3 className="text-2xl font-semibold text-gray-900">{job.title}</h3>
+                    <div className="text-blue-600 font-medium mt-1">{job.company}</div>
                   </div>
                   <div className="text-gray-500 mt-2 md:mt-0">{job.period}</div>
                 </div>
@@ -294,9 +268,7 @@ function App() {
             <Code size={20} />
             <span>SKILLS</span>
           </div>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">
-            Technical Expertise
-          </h2>
+          <h2 className="text-4xl font-bold mb-8 text-gray-900">Technical Expertise</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {technicalSkills.map((skill, index) => (
               <div
@@ -304,9 +276,7 @@ function App() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition group"
               >
                 <div className="flex flex-col h-full">
-                  <div className="text-gray-900 font-medium mb-2">
-                    {skill.name}
-                  </div>
+                  <div className="text-gray-900 font-medium mb-2">{skill.name}</div>
                   <div className="text-blue-600 text-sm mt-auto group-hover:translate-x-1 transition-transform">
                     <div className="flex items-center gap-1">
                       {skill.level}
@@ -324,9 +294,7 @@ function App() {
             <Sparkles size={20} />
             <span>FEATURED WORK</span>
           </div>
-          <h2 className="text-4xl font-bold mb-8 text-gray-900">
-            Recent Projects
-          </h2>
+          <h2 className="text-4xl font-bold mb-8 text-gray-900">Recent Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
@@ -341,9 +309,7 @@ function App() {
                   />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                    {project.title}
-                  </h3>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
                   {project.tech && (
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -378,15 +344,10 @@ function App() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div>
               <h3 className="text-2xl font-bold mb-2">Let's Connect</h3>
-              <p className="text-gray-400">
-                Open for exciting opportunities and collaborations
-              </p>
+              <p className="text-gray-400">Open for exciting opportunities and collaborations</p>
             </div>
             <div className="flex gap-4 mt-6 md:mt-0">
-              <a
-                href={SOCIAL_LINKS.email}
-                className="text-white hover:text-blue-400 transition"
-              >
+              <a href={SOCIAL_LINKS.email} className="text-white hover:text-blue-400 transition">
                 <Mail size={24} />
               </a>
               <a
@@ -408,7 +369,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2025 Siyabonga Hlengwa. All rights reserved.</p>
+            <p>© 2026 Siyabonga Hlengwa. All rights reserved.</p>
           </div>
         </div>
       </footer>
