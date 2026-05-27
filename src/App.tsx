@@ -251,7 +251,7 @@ function App() {
                     {job.tech.map((t, i) => (
                       <span
                         key={i}
-                        className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                        className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-sm"
                       >
                         {t}
                       </span>
@@ -301,11 +301,11 @@ function App() {
                 key={index}
                 className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-72 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-4">
@@ -316,7 +316,7 @@ function App() {
                       {project.tech.map((t, i) => (
                         <span
                           key={i}
-                          className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                          className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-sm"
                         >
                           {t}
                         </span>
