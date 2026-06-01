@@ -14,6 +14,7 @@ import {
   UserCircle2,
 } from "lucide-react";
 import combuiImage from "./assets/images/comb-ui.jpeg";
+import socaiImage from "./assets/images/socai.jpeg";
 
 const workExperience = [
   {
@@ -63,11 +64,19 @@ const technicalSkills = [
 const projects = [
   {
     title: "CombUI - Generative React UI Builder (Web)",
-    tech: ["React (Nextjs)", "TypeScript", "Tailwind CSS", "OpenAI/Anthropic API"],
+    tech: ["React (Nextjs)", "TypeScript", "Tailwind CSS", "OpenAI/Anthropic API", "Vitest", "Playwright"],
     image: combuiImage,
     link: "https://comb-ui.vercel.app/",
     description:
-      "A web application that uses AI to generate React UI based on user input, leveraging OpenAI/Anthropic API for component generation.",
+      "A web application that uses AI to generate React UI based on user input, leveraging OpenAI/Anthropic API for UI generation.",
+  },
+  {
+    title: "Socai - AI Content Social Media App (Web)",
+    tech: ["React (Nextjs)", "TypeScript", "Tailwind CSS", "Grok Imagine/Recraft Image Generation API", "Playwright"],
+    image: socaiImage,
+    link: "https://socai-dusky.vercel.app/",
+    description:
+      "A social media platform for AI content sharing, allowing users to create and share AI-generated images.",
   },
 ];
 function App() {
