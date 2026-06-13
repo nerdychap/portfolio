@@ -22,7 +22,7 @@ Check out the full list of projects in the repository or on my [portfolio websit
 
 ## Contact
 Feel free to reach out to me via:
-- Email: [hlnsiy007@myuct.ac.za]
+- Email: [siyabonga.hlengwa@icloud.com]
 - LinkedIn: [https://www.linkedin.com/in/siyabonga-hlengwa-4552a087/](link-to-linkedin)
 - Portfolio Website: [https://shlengwaprofile.netlify.app/](link-to-portfolio-website)
 

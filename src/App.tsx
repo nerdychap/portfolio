@@ -69,7 +69,7 @@ function FadeIn({
 const SOCIAL = {
   github: "https://github.com/nerdychap",
   linkedin: "https://www.linkedin.com/in/siyabonga-hlengwa-4552a087/",
-  email: "mailto:HLNSIY007@myuct.ac.za",
+  email: "mailto:siyabonga.hlengwa@icloud.com",
 } as const;
 
 const STATS = [
@@ -292,7 +292,8 @@ export default function App() {
                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors">
                   <Github size={18} /> GitHub Profile
                 </a>
-                <a href="#"
+                <a href="/siyabonga-hlengwa-cv.pdf"
+                   download
                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors">
                   <FileText size={18} /> Download CV
                 </a>
